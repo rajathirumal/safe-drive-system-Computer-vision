@@ -1,0 +1,96 @@
+body
+{
+    background-color: rgb(148, 221, 243);
+    color: white;   
+    margin: 0;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    padding-bottom: 3%;
+    border-style: groove;
+    border-radius: 2px;
+    border-color: aqua;
+  }
+  .column#empty
+  {
+width:10%;
+border-style: none; 
+
+  }
+.column#empty:hover
+{
+    background-color:hsl(263,45%,7%);
+    
+}
+.column:hover
+{
+    background-color: rgb(51, 51, 50);
+    color:rgb(233, 223, 223);
+}
+  .row
+  {
+      margin: 5% 10% 0% 15%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/* heading */
+.header
+{
+    color:yellow;
+    padding-top: 20px;
+    font-family: 'Arial Narrow Bold';
+    font-size: 17.5px;
+}
+
+  /* style for button */
+button
+{
+display:inline-block;
+padding:0.5em 1.2em;
+margin:0 0.1em 0.1em 0;
+border:0.16em solid rgba(255,255,255,0);
+border-radius:5em;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bolder;
+color:blue;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+text-align:center;
+transition: all 0.2s;
+background-color:rgb(111, 241, 111);
+}
+button:hover
+{
+    border-color: rgb(3, 136, 14);
+
+    }
+@media all and (max-width:30em){
+     a.button4{
+    display:block;
+    margin:0.2em auto;
+     }
+    }
+
+.instruction p
+{
+    text-align: left;
+}
